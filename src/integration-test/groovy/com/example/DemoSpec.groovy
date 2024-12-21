@@ -14,7 +14,7 @@ class DemoSpec extends GebSpec {
     void "test something"() {
         when:"The home page is visited"
             go '/'
-
+        Thread.sleep(500000)
         then:"The title is correct"
             title == "Welcome to Grails"
     }
